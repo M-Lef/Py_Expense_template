@@ -1,7 +1,5 @@
 import csv
 
-# Je pense que j'aurais préféré utiliser json mais trop tard hehe
-
 expense_file = "src/csv_files/expense_report.csv"
 users_file = "src/csv_files/users.csv"
 
@@ -26,5 +24,11 @@ def write_csv(infos, type):
 def get_users_list():
 
     with open(users_file, 'r') as f:
+        content = f.readlines()
+        return content
+
+def get_expenses():
+
+    with open(expense_file, 'r') as f:
         content = f.readlines()
         return content
