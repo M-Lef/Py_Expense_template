@@ -14,9 +14,16 @@ expense_questions = [
         "message": "New Expense - Label: ",
     },
     {
-        "type": "input",
+        "type": "list",
         "name": "spender",
         "message": "New Expense - Spender: ",
+        "choices": [{"name": user.strip()} for user in utils.get_users_list()],
+    },
+    {
+        "type": "checkbox",
+        "name": "user_invoked",
+        "message": "New Expense - Payers: ",
+        "choices": [{"name": user.strip()} for user in utils.get_users_list()],
     },
 
 ]

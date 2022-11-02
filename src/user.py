@@ -4,18 +4,8 @@ import utils
 user_questions = [
     {
         "type": "input",
-        "name": "given name",
-        "message": "New User - Given Name: ",
-    },
-    {
-        "type": "input",
-        "name": "family_name",
-        "message": "New User - Family Name: ",
-    },
-    {
-        "type": "input",
-        "name": "email",
-        "message": "New User - email: "
+        "name": "name",
+        "message": "New User - Name: ",
     }
 ]
 
